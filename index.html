@@ -5,31 +5,53 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Báo cáo Đồ án Chứng Khoán</title>
     <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
         body {
-            font-family: Arial, sans-serif;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
             background-color: #0f172a;
             color: #ffffff;
-            text-align: center;
-            margin: 0;
-            padding: 40px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            padding: 20px;
         }
         .container {
+            width: 100%;
             max-width: 900px;
-            margin: 0 auto;
             background: #1e293b;
             padding: 30px;
-            border-radius: 12px;
-            box-shadow: 0 10px 25px rgba(0,0,0,0.3);
+            border-radius: 16px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.5);
+            text-align: center;
         }
         h1 {
             color: #38bdf8;
+            font-size: 1.8rem;
             margin-bottom: 10px;
+        }
+        p {
+            color: #94a3b8;
+            font-size: 1rem;
+            margin-bottom: 25px;
+        }
+        .video-wrapper {
+            position: relative;
+            width: 100%;
+            border-radius: 12px;
+            overflow: hidden;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.4);
+            border: 1px solid #334155;
+            background-color: #000;
         }
         video {
             width: 100%;
-            border-radius: 8px;
-            border: 1px solid #475569;
-            margin-top: 20px;
+            height: auto;
+            display: block;
         }
     </style>
 </head>
@@ -38,11 +60,12 @@
         <h1>Video Animation Mô Phỏng Biến Động Giá Chứng Khoán</h1>
         <p>Sản phẩm đồ án phân tích dữ liệu 365 ngày</p>
         
-        <!-- Hiển thị video trên web -->
-        <video controls autoplay loop muted>
-            <source src="video.mp4" type="video/mp4">
-            Trình duyệt của bạn không hỗ trợ thẻ video.
-        </video>
+        <div class="video-wrapper">
+            <video controls autoplay loop muted playsinline preload="auto">
+                <source src="mo_phong_chung_khoan.mp4" type="video/mp4">
+                Trình duyệt của bạn không hỗ trợ hiển thị video này.
+            </video>
+        </div>
     </div>
 </body>
 </html>
